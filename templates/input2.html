@@ -1,0 +1,20 @@
+<html>
+<body>
+    <div class="login">
+       <h1>Emotion Analysis</h1>
+   
+       <form action="{{ url_for('predict_emotion')}}" method="post">
+        <h1>
+            <legend>Note: Press submit to view video of sentiment of your face through webcam</legend>
+        </h1>
+        </div>
+                
+        <div class="mb-3">
+            <input class="btn btn-primary" type="submit" value="Get emotion analysis Video" required />
+        </div>
+    </form>
+    <h2>
+       {{results}}
+    </h2>
+   <body>
+</html>
